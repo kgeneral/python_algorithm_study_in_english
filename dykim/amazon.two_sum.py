@@ -1,5 +1,5 @@
 # https://leetcode.com/explore/interview/card/amazon/76/array-and-strings/508/
-# elapsed time : around 5 min
+# elapsed time : around 35 min
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:

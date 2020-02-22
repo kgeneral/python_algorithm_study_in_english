@@ -4,7 +4,7 @@ class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         output = {}
         for word in strs:
-            h = ",".join(self.hashCount(word))
+            h = self.hashCount(word)
             if h not in output:
                 output[h] = [word]
             else:
@@ -16,4 +16,4 @@ class Solution:
         counts = [0] * 26
         for c in word:
             counts[ord(c) - ord('a')] += 1
-        return str(counts)
+        return tuple(counts)

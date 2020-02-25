@@ -8,7 +8,6 @@ class Solution:
         curMin = prices[0]
         best = prices[1] - prices[0]
         for i in range(1, n):
-            print(prices[i], curMin, best)
             curMin = min(curMin, prices[i])
             best = max(prices[i] - curMin, best)
         

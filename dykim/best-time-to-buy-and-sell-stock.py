@@ -2,8 +2,8 @@
 # elapsed time : 28 min
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        if len(prices) <= 1: return 0
         n = len(prices)
+        if n <= 1: return 0
         curMin = prices[0]
         best = prices[1] - prices[0]
         for i in range(1, n):
